@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cc034b9-1998-4cb3-8639-4285755fd4f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TicketsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ManagerTest.java" afterDir="false" />
+    <list default="true" id="5cc034b9-1998-4cb3-8639-4285755fd4f7" name="Changes" comment="first">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,42 +39,57 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ManagerTest.ShouldFindALl">
-    <configuration name="ManagerTest.ShouldFindALl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ManagerTest.ShouldNotFindById">
+    <configuration name="ManagerTest.ShouldAddTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tickets" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ManagerTest" />
-      <option name="METHOD_NAME" value="ShouldFindALl" />
+      <option name="METHOD_NAME" value="ShouldAddTicket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerTest.ShouldSearchOneTIcket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.ShouldFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tickets" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ManagerTest" />
-      <option name="METHOD_NAME" value="ShouldSearchOneTIcket" />
+      <option name="METHOD_NAME" value="ShouldFindById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerTest.ShouldSearchSmartphone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.ShouldNotFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tickets" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ManagerTest" />
-      <option name="METHOD_NAME" value="ShouldSearchSmartphone" />
+      <option name="METHOD_NAME" value="ShouldNotFindById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerTest.ShouldSearchTickets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.ShouldRemoveById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tickets" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ManagerTest" />
-      <option name="METHOD_NAME" value="ShouldSearchTickets" />
+      <option name="METHOD_NAME" value="ShouldRemoveById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerTest.ShouldSetTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tickets" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ManagerTest" />
+      <option name="METHOD_NAME" value="ShouldSetTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,10 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManagerTest.ShouldFindALl" />
-        <item itemvalue="JUnit.ManagerTest.ShouldSearchTickets" />
-        <item itemvalue="JUnit.ManagerTest.ShouldSearchOneTIcket" />
-        <item itemvalue="JUnit.ManagerTest.ShouldSearchSmartphone" />
+        <item itemvalue="JUnit.ManagerTest.ShouldNotFindById" />
+        <item itemvalue="JUnit.ManagerTest.ShouldFindById" />
+        <item itemvalue="JUnit.ManagerTest.ShouldRemoveById" />
+        <item itemvalue="JUnit.ManagerTest.ShouldAddTicket" />
+        <item itemvalue="JUnit.ManagerTest.ShouldSetTime" />
       </list>
     </recent_temporary>
   </component>
@@ -106,6 +114,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659343614533</updated>
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1659351131589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659351131589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +134,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
