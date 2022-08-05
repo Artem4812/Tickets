@@ -10,7 +10,7 @@ public class ManagerTest {
     Ticket ticket1 = new Ticket(1, 10_000, "ABA", "KUF", "15:00");
     Ticket ticket2 = new Ticket(2, 8_000, "VKO", "ABA", "14:00");
     Ticket ticket3 = new Ticket(3, 15_000, "KUF", "VKO", "10:00");
-    Ticket ticket4 = new Ticket(4, 12_000, "VKO", "KUF", "08:00");
+    Ticket ticket4 = new Ticket(4, 12_000, "RSA", "MGA", "08:00");
     Ticket ticket5 = new Ticket(5, 4_000, "VKO", "ABA", "18:00");
 
     Ticket ticket6 = new Ticket(6, 24_000, "DYU", "KUF", "21:00");
@@ -34,12 +34,30 @@ public class ManagerTest {
     }
 
     @Test
+    public void ShouldSearchOneTickets() {
+        Ticket[] expected = {ticket4};
+        Ticket[] actual = manager.search("RSA", "MGA");
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void ShouldNotSearchTickets() {
+        Ticket[] expected = {};
+        Ticket[] actual = manager.search("ABV", "GDE");
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
     public void ShouldFindALl() {
         Ticket[] expected = {ticket5, ticket2, ticket1, ticket4, ticket3};
         Ticket[] actual = repository.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+
 
     @Test
 
